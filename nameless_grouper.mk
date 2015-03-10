@@ -25,3 +25,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/na
 include vendor/nameless/config/common.mk
 $(call inherit-product, vendor/nameless/config/apns.mk)
 PRODUCT_NAME := nameless_grouper
+
+#Remove mms app.
+PRODUCT_PACKAGES := $(filter-out Mms,$(PRODUCT_PACKAGES))
