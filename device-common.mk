@@ -29,6 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     wifi.supplicant_scan_interval=15 \
     tf.enable=y \
     drm.service.enabled=true
+    persist.sys.isUsbOtgEnabled=true
 
 # libhwui flags
 PRODUCT_PROPERTY_OVERRIDES += \
